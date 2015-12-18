@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A892D4641C23FAE500A2AD61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A892D4631C23FAE500A2AD61 /* AppDelegate.swift */; };
-		A892D4661C23FAE500A2AD61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A892D4651C23FAE500A2AD61 /* ViewController.swift */; };
 		A892D4691C23FAE500A2AD61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A892D4671C23FAE500A2AD61 /* Main.storyboard */; };
 		A892D46B1C23FAE500A2AD61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A892D46A1C23FAE500A2AD61 /* Assets.xcassets */; };
 		A892D46E1C23FAE500A2AD61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A892D46C1C23FAE500A2AD61 /* LaunchScreen.storyboard */; };
 		A892D4791C23FAE600A2AD61 /* CsoundBasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A892D4781C23FAE600A2AD61 /* CsoundBasicTests.swift */; };
 		A892D4841C23FAE600A2AD61 /* CsoundBasicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A892D4831C23FAE600A2AD61 /* CsoundBasicUITests.swift */; };
+		A892D4C11C23FB0600A2AD61 /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892D4B51C23FAFA00A2AD61 /* CsoundLib.framework */; };
+		A892D4C31C23FB0600A2AD61 /* libsndfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892D4B61C23FAFA00A2AD61 /* libsndfile.framework */; };
+		A892D4C81C23FC6700A2AD61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A892D4C71C23FC6700A2AD61 /* ViewController.swift */; };
+		A892D5221C2405D500A2AD61 /* orcandsco.csd in Resources */ = {isa = PBXBuildFile; fileRef = A892D4FB1C2405D500A2AD61 /* orcandsco.csd */; };
+		A892D5231C2405D500A2AD61 /* CsoundMIDI.m in Sources */ = {isa = PBXBuildFile; fileRef = A892D5191C2405D500A2AD61 /* CsoundMIDI.m */; };
+		A892D5241C2405D500A2AD61 /* CsoundObj.m in Sources */ = {isa = PBXBuildFile; fileRef = A892D51B1C2405D500A2AD61 /* CsoundObj.m */; };
+		A892D5251C2405D500A2AD61 /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892D51D1C2405D500A2AD61 /* CsoundLib.framework */; };
+		A892D5261C2405D500A2AD61 /* libsndfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892D51E1C2405D500A2AD61 /* libsndfile.framework */; };
+		A892D5281C2405D500A2AD61 /* run-script.sh in Resources */ = {isa = PBXBuildFile; fileRef = A892D5211C2405D500A2AD61 /* run-script.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +41,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A892D4C51C23FB0600A2AD61 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A892D4601C23FAE500A2AD61 /* CsoundBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CsoundBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A892D4631C23FAE500A2AD61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A892D4651C23FAE500A2AD61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A892D4681C23FAE500A2AD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A892D46A1C23FAE500A2AD61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A892D46D1C23FAE500A2AD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +67,46 @@
 		A892D47F1C23FAE600A2AD61 /* CsoundBasicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CsoundBasicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A892D4831C23FAE600A2AD61 /* CsoundBasicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsoundBasicUITests.swift; sourceTree = "<group>"; };
 		A892D4851C23FAE600A2AD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A892D4B51C23FAFA00A2AD61 /* CsoundLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CsoundLib.framework; path = /Users/carlosmillan/Development/Csound/CsoundBasic/CsoundBasic/CsoundIos/lib/CsoundLib.framework; sourceTree = "<absolute>"; };
+		A892D4B61C23FAFA00A2AD61 /* libsndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libsndfile.framework; path = /Users/carlosmillan/Development/Csound/CsoundBasic/CsoundBasic/CsoundIos/lib/libsndfile.framework; sourceTree = "<absolute>"; };
+		A892D4C71C23FC6700A2AD61 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A892D4FB1C2405D500A2AD61 /* orcandsco.csd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = orcandsco.csd; sourceTree = "<group>"; };
+		A892D4FD1C2405D500A2AD61 /* cfgvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfgvar.h; sourceTree = "<group>"; };
+		A892D4FE1C2405D500A2AD61 /* CppSound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CppSound.hpp; sourceTree = "<group>"; };
+		A892D4FF1C2405D500A2AD61 /* cs_par_structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cs_par_structs.h; sourceTree = "<group>"; };
+		A892D5001C2405D500A2AD61 /* cscore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cscore.h; sourceTree = "<group>"; };
+		A892D5011C2405D500A2AD61 /* csdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csdebug.h; sourceTree = "<group>"; };
+		A892D5021C2405D500A2AD61 /* csdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csdl.h; sourceTree = "<group>"; };
+		A892D5031C2405D500A2AD61 /* csound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csound.h; sourceTree = "<group>"; };
+		A892D5041C2405D500A2AD61 /* csound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = csound.hpp; sourceTree = "<group>"; };
+		A892D5051C2405D500A2AD61 /* csound_data_structures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csound_data_structures.h; sourceTree = "<group>"; };
+		A892D5061C2405D500A2AD61 /* csound_standard_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csound_standard_types.h; sourceTree = "<group>"; };
+		A892D5071C2405D500A2AD61 /* csound_type_system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csound_type_system.h; sourceTree = "<group>"; };
+		A892D5081C2405D500A2AD61 /* csoundCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csoundCore.h; sourceTree = "<group>"; };
+		A892D5091C2405D500A2AD61 /* CsoundFile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CsoundFile.hpp; sourceTree = "<group>"; };
+		A892D50A1C2405D500A2AD61 /* csPerfThread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = csPerfThread.hpp; sourceTree = "<group>"; };
+		A892D50B1C2405D500A2AD61 /* cwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cwindow.h; sourceTree = "<group>"; };
+		A892D50C1C2405D500A2AD61 /* filebuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filebuilding.h; sourceTree = "<group>"; };
+		A892D50D1C2405D500A2AD61 /* float-version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "float-version.h"; sourceTree = "<group>"; };
+		A892D50E1C2405D500A2AD61 /* interlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interlocks.h; sourceTree = "<group>"; };
+		A892D50F1C2405D500A2AD61 /* msg_attr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msg_attr.h; sourceTree = "<group>"; };
+		A892D5101C2405D500A2AD61 /* OpcodeBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OpcodeBase.hpp; sourceTree = "<group>"; };
+		A892D5111C2405D500A2AD61 /* pools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pools.h; sourceTree = "<group>"; };
+		A892D5121C2405D500A2AD61 /* pstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pstream.h; sourceTree = "<group>"; };
+		A892D5131C2405D500A2AD61 /* pvfileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pvfileio.h; sourceTree = "<group>"; };
+		A892D5141C2405D500A2AD61 /* soundio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundio.h; sourceTree = "<group>"; };
+		A892D5151C2405D500A2AD61 /* sysdep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdep.h; sourceTree = "<group>"; };
+		A892D5161C2405D500A2AD61 /* text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = text.h; sourceTree = "<group>"; };
+		A892D5171C2405D500A2AD61 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		A892D5181C2405D500A2AD61 /* CsoundMIDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundMIDI.h; sourceTree = "<group>"; };
+		A892D5191C2405D500A2AD61 /* CsoundMIDI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundMIDI.m; sourceTree = "<group>"; };
+		A892D51A1C2405D500A2AD61 /* CsoundObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundObj.h; sourceTree = "<group>"; };
+		A892D51B1C2405D500A2AD61 /* CsoundObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundObj.m; sourceTree = "<group>"; };
+		A892D51D1C2405D500A2AD61 /* CsoundLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CsoundLib.framework; sourceTree = "<group>"; };
+		A892D51E1C2405D500A2AD61 /* libsndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libsndfile.framework; sourceTree = "<group>"; };
+		A892D51F1C2405D500A2AD61 /* ObjcBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcBridge.h; sourceTree = "<group>"; };
+		A892D5201C2405D500A2AD61 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A892D5211C2405D500A2AD61 /* run-script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-script.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +114,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A892D5261C2405D500A2AD61 /* libsndfile.framework in Frameworks */,
+				A892D5251C2405D500A2AD61 /* CsoundLib.framework in Frameworks */,
+				A892D4C31C23FB0600A2AD61 /* libsndfile.framework in Frameworks */,
+				A892D4C11C23FB0600A2AD61 /* CsoundLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +161,9 @@
 		A892D4621C23FAE500A2AD61 /* CsoundBasic */ = {
 			isa = PBXGroup;
 			children = (
+				A892D4F91C2405D500A2AD61 /* CsoundIos */,
 				A892D4631C23FAE500A2AD61 /* AppDelegate.swift */,
-				A892D4651C23FAE500A2AD61 /* ViewController.swift */,
+				A892D4C71C23FC6700A2AD61 /* ViewController.swift */,
 				A892D4671C23FAE500A2AD61 /* Main.storyboard */,
 				A892D46A1C23FAE500A2AD61 /* Assets.xcassets */,
 				A892D46C1C23FAE500A2AD61 /* LaunchScreen.storyboard */,
@@ -125,6 +190,74 @@
 			path = CsoundBasicUITests;
 			sourceTree = "<group>";
 		};
+		A892D4F91C2405D500A2AD61 /* CsoundIos */ = {
+			isa = PBXGroup;
+			children = (
+				A892D4FA1C2405D500A2AD61 /* csd */,
+				A892D4FC1C2405D500A2AD61 /* csound */,
+				A892D5181C2405D500A2AD61 /* CsoundMIDI.h */,
+				A892D5191C2405D500A2AD61 /* CsoundMIDI.m */,
+				A892D51A1C2405D500A2AD61 /* CsoundObj.h */,
+				A892D51B1C2405D500A2AD61 /* CsoundObj.m */,
+				A892D51C1C2405D500A2AD61 /* lib */,
+				A892D51F1C2405D500A2AD61 /* ObjcBridge.h */,
+				A892D5201C2405D500A2AD61 /* README.md */,
+				A892D5211C2405D500A2AD61 /* run-script.sh */,
+			);
+			path = CsoundIos;
+			sourceTree = "<group>";
+		};
+		A892D4FA1C2405D500A2AD61 /* csd */ = {
+			isa = PBXGroup;
+			children = (
+				A892D4FB1C2405D500A2AD61 /* orcandsco.csd */,
+			);
+			path = csd;
+			sourceTree = "<group>";
+		};
+		A892D4FC1C2405D500A2AD61 /* csound */ = {
+			isa = PBXGroup;
+			children = (
+				A892D4FD1C2405D500A2AD61 /* cfgvar.h */,
+				A892D4FE1C2405D500A2AD61 /* CppSound.hpp */,
+				A892D4FF1C2405D500A2AD61 /* cs_par_structs.h */,
+				A892D5001C2405D500A2AD61 /* cscore.h */,
+				A892D5011C2405D500A2AD61 /* csdebug.h */,
+				A892D5021C2405D500A2AD61 /* csdl.h */,
+				A892D5031C2405D500A2AD61 /* csound.h */,
+				A892D5041C2405D500A2AD61 /* csound.hpp */,
+				A892D5051C2405D500A2AD61 /* csound_data_structures.h */,
+				A892D5061C2405D500A2AD61 /* csound_standard_types.h */,
+				A892D5071C2405D500A2AD61 /* csound_type_system.h */,
+				A892D5081C2405D500A2AD61 /* csoundCore.h */,
+				A892D5091C2405D500A2AD61 /* CsoundFile.hpp */,
+				A892D50A1C2405D500A2AD61 /* csPerfThread.hpp */,
+				A892D50B1C2405D500A2AD61 /* cwindow.h */,
+				A892D50C1C2405D500A2AD61 /* filebuilding.h */,
+				A892D50D1C2405D500A2AD61 /* float-version.h */,
+				A892D50E1C2405D500A2AD61 /* interlocks.h */,
+				A892D50F1C2405D500A2AD61 /* msg_attr.h */,
+				A892D5101C2405D500A2AD61 /* OpcodeBase.hpp */,
+				A892D5111C2405D500A2AD61 /* pools.h */,
+				A892D5121C2405D500A2AD61 /* pstream.h */,
+				A892D5131C2405D500A2AD61 /* pvfileio.h */,
+				A892D5141C2405D500A2AD61 /* soundio.h */,
+				A892D5151C2405D500A2AD61 /* sysdep.h */,
+				A892D5161C2405D500A2AD61 /* text.h */,
+				A892D5171C2405D500A2AD61 /* version.h */,
+			);
+			path = csound;
+			sourceTree = "<group>";
+		};
+		A892D51C1C2405D500A2AD61 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A892D51D1C2405D500A2AD61 /* CsoundLib.framework */,
+				A892D51E1C2405D500A2AD61 /* libsndfile.framework */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +268,8 @@
 				A892D45C1C23FAE500A2AD61 /* Sources */,
 				A892D45D1C23FAE500A2AD61 /* Frameworks */,
 				A892D45E1C23FAE500A2AD61 /* Resources */,
+				A892D4C51C23FB0600A2AD61 /* Embed Frameworks */,
+				A892D4C61C23FB0D00A2AD61 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -230,8 +365,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A892D46E1C23FAE500A2AD61 /* LaunchScreen.storyboard in Resources */,
+				A892D5221C2405D500A2AD61 /* orcandsco.csd in Resources */,
 				A892D46B1C23FAE500A2AD61 /* Assets.xcassets in Resources */,
 				A892D4691C23FAE500A2AD61 /* Main.storyboard in Resources */,
+				A892D5281C2405D500A2AD61 /* run-script.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +388,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A892D4C61C23FB0D00A2AD61 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "CsoundBasic/CsoundIos/run-script.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A892D45C1C23FAE500A2AD61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A892D4661C23FAE500A2AD61 /* ViewController.swift in Sources */,
+				A892D5231C2405D500A2AD61 /* CsoundMIDI.m in Sources */,
+				A892D5241C2405D500A2AD61 /* CsoundObj.m in Sources */,
+				A892D4C81C23FC6700A2AD61 /* ViewController.swift in Sources */,
 				A892D4641C23FAE500A2AD61 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +554,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CsoundBasic/CsoundIos/lib",
+				);
 				INFOPLIST_FILE = CsoundBasic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asdeva.CsoundBasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = CsoundBasic/CsoundIos/ObjcBridge.h;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "CsoundBasic/CsoundIos/**";
 			};
 			name = Debug;
 		};
@@ -410,10 +571,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CsoundBasic/CsoundIos/lib",
+				);
 				INFOPLIST_FILE = CsoundBasic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asdeva.CsoundBasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = CsoundBasic/CsoundIos/ObjcBridge.h;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "CsoundBasic/CsoundIos/**";
 			};
 			name = Release;
 		};
