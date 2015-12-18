@@ -22,6 +22,10 @@
 		A892D5251C2405D500A2AD61 /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892D51D1C2405D500A2AD61 /* CsoundLib.framework */; };
 		A892D5261C2405D500A2AD61 /* libsndfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892D51E1C2405D500A2AD61 /* libsndfile.framework */; };
 		A892D5281C2405D500A2AD61 /* run-script.sh in Resources */ = {isa = PBXBuildFile; fileRef = A892D5211C2405D500A2AD61 /* run-script.sh */; };
+		A892D5291C24095D00A2AD61 /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892D51D1C2405D500A2AD61 /* CsoundLib.framework */; };
+		A892D52A1C24095D00A2AD61 /* CsoundLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A892D51D1C2405D500A2AD61 /* CsoundLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A892D52B1C24095D00A2AD61 /* libsndfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892D51E1C2405D500A2AD61 /* libsndfile.framework */; };
+		A892D52C1C24095D00A2AD61 /* libsndfile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A892D51E1C2405D500A2AD61 /* libsndfile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A892D52C1C24095D00A2AD61 /* libsndfile.framework in Embed Frameworks */,
+				A892D52A1C24095D00A2AD61 /* CsoundLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +122,9 @@
 			files = (
 				A892D5261C2405D500A2AD61 /* libsndfile.framework in Frameworks */,
 				A892D5251C2405D500A2AD61 /* CsoundLib.framework in Frameworks */,
+				A892D52B1C24095D00A2AD61 /* libsndfile.framework in Frameworks */,
 				A892D4C31C23FB0600A2AD61 /* libsndfile.framework in Frameworks */,
+				A892D5291C24095D00A2AD61 /* CsoundLib.framework in Frameworks */,
 				A892D4C11C23FB0600A2AD61 /* CsoundLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
